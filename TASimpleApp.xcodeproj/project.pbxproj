@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		6C16735D21798DF100D6C8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16735C21798DF100D6C8DC /* AppDelegate.swift */; };
 		6C16736021798DF100D6C8DC /* TASimpleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C16735E21798DF100D6C8DC /* TASimpleApp.xcdatamodeld */; };
-		6C16736221798DF100D6C8DC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16736121798DF100D6C8DC /* MasterViewController.swift */; };
-		6C16736421798DF100D6C8DC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16736321798DF100D6C8DC /* DetailViewController.swift */; };
 		6C16736721798DF100D6C8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C16736521798DF100D6C8DC /* Main.storyboard */; };
 		6C16736921798DF900D6C8DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C16736821798DF900D6C8DC /* Assets.xcassets */; };
 		6C16736C21798DF900D6C8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C16736A21798DF900D6C8DC /* LaunchScreen.storyboard */; };
 		6C16737721798DF900D6C8DC /* TASimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16737621798DF900D6C8DC /* TASimpleAppTests.swift */; };
 		6C16738221798DF900D6C8DC /* TASimpleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16738121798DF900D6C8DC /* TASimpleAppUITests.swift */; };
+		6C16739121798E6C00D6C8DC /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16739021798E6C00D6C8DC /* ArticleService.swift */; };
+		6C16739321798F8400D6C8DC /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16739221798F8400D6C8DC /* ServiceConstants.swift */; };
+		6C16739621799A0000D6C8DC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16739521799A0000D6C8DC /* Article.swift */; };
+		6C167399217AE74100D6C8DC /* TAUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C167398217AE74100D6C8DC /* TAUtility.swift */; };
+		6C16739D217AEDAF00D6C8DC /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C16739C217AEDAF00D6C8DC /* ArticleViewController.swift */; };
+		6CE7429B217B582300C51D61 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE7429A217B582300C51D61 /* ArticleTableViewCell.swift */; };
+		6CE7429D217B8AC700C51D61 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE7429C217B8AC600C51D61 /* ArticleDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +44,6 @@
 		6C16735921798DF100D6C8DC /* TASimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TASimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C16735C21798DF100D6C8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C16735F21798DF100D6C8DC /* TASimpleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TASimpleApp.xcdatamodel; sourceTree = "<group>"; };
-		6C16736121798DF100D6C8DC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		6C16736321798DF100D6C8DC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6C16736621798DF100D6C8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C16736821798DF900D6C8DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C16736B21798DF900D6C8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,13 @@
 		6C16737D21798DF900D6C8DC /* TASimpleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TASimpleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C16738121798DF900D6C8DC /* TASimpleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASimpleAppUITests.swift; sourceTree = "<group>"; };
 		6C16738321798DF900D6C8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C16739021798E6C00D6C8DC /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		6C16739221798F8400D6C8DC /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		6C16739521799A0000D6C8DC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		6C167398217AE74100D6C8DC /* TAUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUtility.swift; sourceTree = "<group>"; };
+		6C16739C217AEDAF00D6C8DC /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		6CE7429A217B582300C51D61 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		6CE7429C217B8AC600C51D61 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +111,18 @@
 		6C16735B21798DF100D6C8DC /* TASimpleApp */ = {
 			isa = PBXGroup;
 			children = (
+				6C167397217AE71C00D6C8DC /* Utils */,
+				6C167394217999C600D6C8DC /* Model */,
+				6C16738F21798E0A00D6C8DC /* DAL */,
 				6C16735C21798DF100D6C8DC /* AppDelegate.swift */,
-				6C16736121798DF100D6C8DC /* MasterViewController.swift */,
-				6C16736321798DF100D6C8DC /* DetailViewController.swift */,
 				6C16736521798DF100D6C8DC /* Main.storyboard */,
 				6C16736821798DF900D6C8DC /* Assets.xcassets */,
 				6C16736A21798DF900D6C8DC /* LaunchScreen.storyboard */,
 				6C16736D21798DF900D6C8DC /* Info.plist */,
 				6C16735E21798DF100D6C8DC /* TASimpleApp.xcdatamodeld */,
+				6C16739C217AEDAF00D6C8DC /* ArticleViewController.swift */,
+				6CE7429A217B582300C51D61 /* ArticleTableViewCell.swift */,
+				6CE7429C217B8AC600C51D61 /* ArticleDetailViewController.swift */,
 			);
 			path = TASimpleApp;
 			sourceTree = "<group>";
@@ -129,6 +143,31 @@
 				6C16738321798DF900D6C8DC /* Info.plist */,
 			);
 			path = TASimpleAppUITests;
+			sourceTree = "<group>";
+		};
+		6C16738F21798E0A00D6C8DC /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				6C16739221798F8400D6C8DC /* ServiceConstants.swift */,
+				6C16739021798E6C00D6C8DC /* ArticleService.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		6C167394217999C600D6C8DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C16739521799A0000D6C8DC /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C167397217AE71C00D6C8DC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6C167398217AE74100D6C8DC /* TAUtility.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C16739621799A0000D6C8DC /* Article.swift in Sources */,
+				6C16739121798E6C00D6C8DC /* ArticleService.swift in Sources */,
+				6C16739D217AEDAF00D6C8DC /* ArticleViewController.swift in Sources */,
 				6C16736021798DF100D6C8DC /* TASimpleApp.xcdatamodeld in Sources */,
+				6CE7429B217B582300C51D61 /* ArticleTableViewCell.swift in Sources */,
+				6C167399217AE74100D6C8DC /* TAUtility.swift in Sources */,
 				6C16735D21798DF100D6C8DC /* AppDelegate.swift in Sources */,
-				6C16736221798DF100D6C8DC /* MasterViewController.swift in Sources */,
-				6C16736421798DF100D6C8DC /* DetailViewController.swift in Sources */,
+				6C16739321798F8400D6C8DC /* ServiceConstants.swift in Sources */,
+				6CE7429D217B8AC700C51D61 /* ArticleDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
