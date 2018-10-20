@@ -10,10 +10,12 @@ import XCTest
 @testable import TASimpleApp
 
 class TASimpleAppTests: XCTestCase {
+    var articleViewController: ArticleViewController?
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        articleViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ArticleViewController") as? ArticleViewController
     }
     
     override func tearDown() {
@@ -26,11 +28,25 @@ class TASimpleAppTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testPerformanceExample() {
+    func testPerformanceLoadArticleInTableView() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+            if let path = Bundle(for: type(of: self)
+                ).path(forResource: "article",
+                       ofType: "json") {
+                do {
+                    let data = try Data(contentsOf: URL(fileURLWithPath: path),
+                                        options: .alwaysMapped)
+                    let decoder = JSONDecoder()
+                    let articlesData = try decoder.decode(Articles.self, from: data)
+                    _ = articleViewController?.view
+                    articleViewController?.articles = articlesData.articles
+                    articleViewController?.articleTableView.reloadData()
+                } catch {
+                    print("Problem parsing JSON")
+                }
+            }
         }
     }
-    
 }
