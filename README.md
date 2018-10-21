@@ -2,8 +2,8 @@
 
 Overview
 =========
-Developed code by XCode 9.4.1 and Swift 4.1.2/n
-Used Design Pattern MVC
+Developed code by XCode 9.4.1 and Swift 4.1.2<br />
+Used Design Pattern MVC<br />
 Created Article class to map json object into Model similar to objectmapper
 Created Utility class to convert date to string, string to date
 Written UI test scripts for Article Service, Article List and Article Detail view controller
