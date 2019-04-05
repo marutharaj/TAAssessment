@@ -116,7 +116,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCellIdentifier", for: indexPath) as? ArticleTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCellId", for: indexPath) as? ArticleTableViewCell
         
         let article = self.articles[indexPath.row]
         
