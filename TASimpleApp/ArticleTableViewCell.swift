@@ -12,7 +12,7 @@ class ArticleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var articleByLabel: UILabel!
-    @IBOutlet weak var articlePublishedDateLabel: UILabel!
+    @IBOutlet weak var articlePublishDateLabel: UILabel!
     @IBOutlet weak var articleImageView: UIImageView!
     //var indexPath : Int?
     
